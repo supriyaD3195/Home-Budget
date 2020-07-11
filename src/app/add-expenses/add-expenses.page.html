@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home-budget"></ion-back-button>
+    </ion-buttons>
+    <ion-title>add-expenses</ion-title>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="date">
+ <ion-datetime #datePicker pickerFormat="DD MMM YYYY" ></ion-datetime>
+  <ion-fab-button color="success" (click)="datePicker.open()"><ion-icon name="calendar"></ion-icon><ion-label></ion-label></ion-fab-button>
+</div>
+<br>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-icon name="receipt-outline"></ion-icon>
+      </ion-avatar>
+     <ion-input type="text" placeholder="Enter a Description"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-icon name="logo-usd"></ion-icon>
+      </ion-avatar>
+     <ion-input type="text" placeholder="0.00"></ion-input>
+    </ion-item>
+  </ion-list>
+<br>
+    <ion-button color="success" style="align-items: center;" class="center" (click)="save()"> 
+      save
+    </ion-button>
+    <br>
+    <div>
+      <div class="scroll" scrollX="true">
+        <table>
+          <tr>
+         
+            <th>Date</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>total</th>
+          </tr>
+  
+          <tr > 
+           
+            <td>06/06/2020</td>
+            <td>Milk</td>
+            <td>25</td>
+            <td>100</td>
+          </tr>
+          <tr> 
+            <td>06/06/2020</td>
+            <td>sugar</td>
+            <td>50</td>
+            <td>150</td>
+          </tr>
+        </table>
+      </div>
+    </div> <br> <br>
+</ion-content>

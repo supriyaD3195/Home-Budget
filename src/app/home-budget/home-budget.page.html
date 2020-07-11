@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+  
+    <ion-title style="text-align: center;">Home Budget</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div fxFlex="value%" fxFlexAlign="center">
+    <img src="../../assets/icon/logo.jpg" alt="logo" />
+  </div>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating" name="username"   >Username*</ion-label>
+      
+    
+      <ion-input  [(ngModel)]="username" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating" name="password">Password *</ion-label>
+    
+    
+        <ion-input   [(ngModel)]="password" type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-row>
+    
+    <ion-col> <ion-button expand="block" color="success"(click)="signin()">Sign In</ion-button><br /> </ion-col>
+    <ion-col> <ion-button expand="block" color="success"(click)="signup()">Sign Up</ion-button><br /> </ion-col>
+
+  </ion-row>
+  <a  class="ForgotPassword" style="float: right; text-align: end;" (click)="forgot_password()">Forget Password </a>
+</ion-content>

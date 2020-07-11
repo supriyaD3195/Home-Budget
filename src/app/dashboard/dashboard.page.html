@@ -1,0 +1,90 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button menuId="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home-Budget<br /></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br /><br />
+
+  
+  <ion-slides [options]="slideOptsOne"  pager = 'true'  autoplay="2000" loop="true" speed="3000" style="max-height:200px">
+    <ion-slide *ngFor='let image of Imagearray'>
+    
+                 
+              <img src="{{image.image}}"   style="width:100% ;height: 180px;object-fit: initial;">
+          
+                        
+    </ion-slide>
+  </ion-slides>
+  <br>
+  <br>
+
+  <div align="center">
+    <ion-card>
+      <img
+        style="width: 280px; height: 80px;"
+        src="../../assets/icon/count.jpg"
+      />
+      <div class="card-title" style="color: black;">Today's Expense:1000</div>
+    </ion-card>
+  </div>
+  <br>
+  <ion-grid>
+    <ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="../../assets/icon/h-icon.png" />
+          </ion-avatar>
+          <ion-label
+            ><h3><strong>Sonal</strong> added <strong>"Rent"</strong></h3>
+            <p>balance is ₹ 10,000</p>
+            <p>july 1</p></ion-label
+          >
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="../../assets/icon/wifi.png" />
+          </ion-avatar>
+          <ion-label>
+            <h3><strong>Supriya</strong> added <strong>"Recharge"</strong></h3>
+            <p>balance is ₹ 10,000</p>
+            <p>july 2</p>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="../../assets/icon/v-icon.jpg" />
+          </ion-avatar>
+          <ion-label>
+            <h3><strong>Sonal</strong> added <strong>"vegitables"</strong></h3>
+            <p>balance is ₹ 10,000</p>
+            <p>july 1</p>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="../../assets/icon/G-icon.jpg" />
+          </ion-avatar>
+          <ion-label>
+            <h3><strong>supriya</strong> added <strong>"Groceries"</strong></h3>
+            <p>balance is ₹ 10,000</p>
+            <p>july 1</p>
+          </ion-label>
+        </ion-item>
+        <br />
+        
+      </ion-list>
+    </ion-list>
+  </ion-grid>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <!-- //fab=floating action button -->
+    <ion-fab-button color="success" (click)="proceed()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,45 @@
+
+  ion-card {
+    position: relative;
+     text-align: end;
+
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 1em;
+    width: 100%;
+    font-weight: bold;
+    color:#ffffff;
+  
+    position: absolute;
+  top: 8px;
+  right: 20px;
+ 
+  
+  }
+  
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+    
+  }
+  .scroll {
+    overflow: auto;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+   
