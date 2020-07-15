@@ -4,7 +4,7 @@
     <ion-toolbar color="success">
     
       <ion-buttons slot="start">
-        <ion-back-button defaultHref="/home"></ion-back-button>
+        <ion-back-button defaultHref="/myprofile"></ion-back-button>
       </ion-buttons>
       <ion-title>Update Profile</ion-title>
     </ion-toolbar>
@@ -33,20 +33,16 @@
         <ion-label  position="floating">Address*</ion-label>
         <ion-input  type="text"></ion-input>
       </ion-item>
-  
-      
-    <br>
-    
-  
-    <ion-row>
-      <ion-col>
-      
-        <ion-button expand="block"  color="success"  (click)="proceed()">Save</ion-button><br>
-      </ion-col>
-      
-    </ion-row>
     
     </ion-list>
     
   </ion-content>
  
+
+  <ion-footer>
+    <ion-toolbar transparent>
+      <ion-button expand="block"  color="success"  (click)="proceed()">Save</ion-button><br>
+    </ion-toolbar>
+  </ion-footer>
+  
+  

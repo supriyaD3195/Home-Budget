@@ -1,23 +1,19 @@
 
   ion-card {
     position: relative;
-     text-align: end;
-
+    text-align: center;
+    height: 80px;
   }
-
+  .fade{
+    border-radius: 5px;
+  }
   .card-title {
     position: absolute;
     top: 36%;
     font-size: 1em;
     width: 100%;
     font-weight: bold;
-    color:#ffffff;
-  
-    position: absolute;
-  top: 8px;
-  right: 20px;
- 
-  
+    color:#ffffff
   }
   
   .card-subtitle {
@@ -26,11 +22,12 @@
     top: 52%;
     width: 100%;
     color: #fff;
-    
   }
-  .scroll {
-    overflow: auto;
-  }
+  
+ .scroll {
+  overflow: auto;
+}
+  
   table {
     font-family: arial, sans-serif;
     border-collapse: collapse;

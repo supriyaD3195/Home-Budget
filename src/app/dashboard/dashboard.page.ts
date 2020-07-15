@@ -1,7 +1,6 @@
 import { Component, OnInit, NgModule } from '@angular/core';
 import { Router } from '@angular/router';
 import { IonSlides } from '@ionic/angular';
-
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.page.html',
@@ -9,10 +8,15 @@ import { IonSlides } from '@ionic/angular';
 })
 export class DashboardPage implements OnInit {
   Imagearray:any;
+  
   constructor(public router:Router) { 
     this.Imagearray=[{'image':'../../assets/icon/nav.jpg'},{'image':'../../assets/icon/slide2.jpeg'},{'image':'../../assets/icon/slide3.jpg'}]
 
   }
+  
+  // public doughnutChartLabel:string[]=['rent','grocery','vegitables'];
+  // public doughnutChartData:number[]=[5000,2000,1000];
+  // public doughnutChartType:string='doughnut';
 
   ngOnInit() {
   }
@@ -33,4 +37,5 @@ export class DashboardPage implements OnInit {
    {
      this.router.navigate(['./details'])
    }
+
 }

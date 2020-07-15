@@ -1,42 +1,57 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="success">
-     <ion-buttons slot="start">
+    <ion-buttons slot="start">
       <ion-back-button defaultHref="/home-budget"></ion-back-button>
     </ion-buttons>
     <ion-title>My Profile</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content >
- 
+<ion-content>
   <ion-list>
-         
     <ion-item>
       <ion-label mode="md" position="floating">{{"Name"}}</ion-label>
-          <ion-input mode="md" type="name" value="Supriya Nandkumar Dharmadhikari" readonly="true"></ion-input>
-      </ion-item>
+      <ion-input
+        mode="md"
+        type="name"
+        value="Supriya Nandkumar Dharmadhikari"
+        readonly="true"
+      ></ion-input>
+    </ion-item>
     <ion-item>
       <ion-label mode="md" position="floating">Birth Date* </ion-label>
-    <ion-datetime value="1995-10-31T15:43:40.394Z" display-timezone="utc"></ion-datetime>
-  
+      <ion-datetime
+        value="1995-10-31T15:43:40.394Z"
+        display-timezone="utc"
+      ></ion-datetime>
     </ion-item>
-    <ion-item >
+    <ion-item>
       <ion-label mode="md" position="floating">{{"email"}}</ion-label>
-      <ion-input mode="md" type="email" value="supriyadharma03@gmail.com" readonly="true"></ion-input>
+      <ion-input
+        mode="md"
+        type="email"
+        value="supriyadharma03@gmail.com"
+        readonly="true"
+      ></ion-input>
     </ion-item>
 
-    <ion-item >
+    <ion-item>
       <ion-label mode="md" position="floating">{{"phone"}}</ion-label>
-      <ion-input mode="md" type="text" value="9011314927" readonly="true"></ion-input>
-    </ion-item>
-    <br>
-    <br>
-  <br>
-  <ion-row>
-    <ion-col>
-   <ion-button expand="block" color="success"  (click)="proceed()">Update</ion-button><br>
-    </ion-col>
-  </ion-row>
+      <ion-input
+        mode="md"
+        type="text"
+        value="9011314927"
+        readonly="true"
+      ></ion-input>
+    </ion-item>     
   </ion-list>
-  
 </ion-content>
+
+
+<ion-footer>
+	<ion-toolbar transparent>
+    <ion-button id="bottom" expand="block" color="success" (click)="proceed()">Update</ion-button>
+	</ion-toolbar>
+</ion-footer>
+
+

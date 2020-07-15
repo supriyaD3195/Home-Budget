@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home-budget', pathMatch: 'full' },
+  { path: '', redirectTo: 'starting-pages', pathMatch: 'full' },
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
@@ -47,6 +47,10 @@ const routes: Routes = [
   {
     path: 'update-profile',
     loadChildren: () => import('./update-profile/update-profile.module').then( m => m.UpdateProfilePageModule)
+  },
+  {
+    path: 'starting-pages',
+    loadChildren: () => import('./starting-pages/starting-pages.module').then( m => m.StartingPagesPageModule)
   }
 ];
 @NgModule({

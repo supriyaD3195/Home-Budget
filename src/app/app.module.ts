@@ -9,11 +9,15 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import{SuperTabsModule} from '@ionic-super-tabs/angular';
-
+import { from } from 'rxjs';
+import firebaseConfig from './firebase';
+import{AngularFireModule} from '@angular/fire';
+import{AngularFireAuthModule} from '@angular/fire/auth';
+import{ChartsModule} from 'ng2-charts';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,SuperTabsModule.forRoot(),FormsModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,SuperTabsModule.forRoot(),FormsModule, AngularFireModule.initializeApp(firebaseConfig),AngularFireAuthModule,ChartsModule],
   providers: [
     StatusBar,
     SplashScreen,

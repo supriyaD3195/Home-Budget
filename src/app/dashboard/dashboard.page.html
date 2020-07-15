@@ -24,13 +24,12 @@
   <br>
 
   <div align="center">
-    <ion-card>
-      <img
-        style="width: 280px; height: 80px;"
-        src="../../assets/icon/count.jpg"
-      />
-      <div class="card-title" style="color: black;">Today's Expense:1000</div>
-    </ion-card>
+    <ion-card  >
+      <img style="position: relative;" src="../../assets/icon/count.jpg"/>
+      <div class="card-title" style="color: black;" >Todays's Expenses: 1000</div>
+  </ion-card>  
+  
+
   </div>
   <br>
   <ion-grid>
@@ -80,6 +79,16 @@
         
       </ion-list>
     </ion-list>
+    
+    <ion-card>
+      <ion-card-header>
+        graph
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #doughnutCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+
   </ion-grid>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <!-- //fab=floating action button -->
@@ -88,3 +97,4 @@
     </ion-fab-button>
   </ion-fab>
 </ion-content>
+

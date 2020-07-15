@@ -11,17 +11,15 @@
   </div>
   <ion-list>
     <ion-item>
-      <ion-label position="floating" name="username"   >Username*</ion-label>
-      
-    
-      <ion-input  [(ngModel)]="username" type="text"></ion-input>
+   
+      <ion-input   placeholder="username" [(ngModel)]="username" type="text"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label position="floating" name="password">Password *</ion-label>
-    
-    
-        <ion-input   [(ngModel)]="password" type="password"></ion-input>
+      <ion-input  [(ngModel)]="password"placeholder="Password" name ="password" [type]="showPassword ? 'text' : 'password'" clearOnEdit="false" color="black"></ion-input>
+      <button (click)="onPasswordToggle()" ion-button clear small item-end icon-only>
+        <ion-icon [name]="showPassword ? 'eye-off' : 'eye'"></ion-icon>
+      </button>
     </ion-item>
   </ion-list>
   <ion-row>
