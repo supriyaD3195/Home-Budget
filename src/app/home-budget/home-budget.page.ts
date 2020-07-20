@@ -1,7 +1,6 @@
 import { async } from '@angular/core/testing';
 import {  Router, NavigationExtras } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/auth';
 import { auth } from 'firebase/app';
 import { ToastController, MenuController } from '@ionic/angular';
 import {FormControl} from '@angular/forms';
@@ -19,7 +18,7 @@ passwordType: string='password';
 name = new FormControl('');
 
 passwordIcon: string = 'eye-off';
-  constructor(public router: Router,public auth: AngularFireAuth,public toastController: ToastController, public menuCtrl:MenuController) {
+  constructor(public router: Router,public toastController: ToastController, public menuCtrl:MenuController) {
     this.menuCtrl.enable(true);
    }
 
